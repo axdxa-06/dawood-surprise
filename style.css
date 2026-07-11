@@ -59,7 +59,7 @@ h1 {
 .plate {
     width: 80px;
     position: absolute;
-    top: 72%;
-    left: 56%;
+    top: 76%;
+    left: 60%;
     transform: translateX(-50%);
 }
