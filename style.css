@@ -77,3 +77,15 @@ h1 {
     left: 62%;
     transform: translateX(-50%);
 }
+.start-button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 22px;
+    font-family: "Baloo 2", cursive;
+    color: white;
+    background: rgba(120, 50, 200, 0.8);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(180, 100, 255, 0.8);
+}
