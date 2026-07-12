@@ -95,3 +95,39 @@ h1 {
     width: 300px;
     height: 120px;
 }
+.page-two {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #16002f, #3b0a63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Baloo 2", cursive;
+}
+
+.question-container {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.porsche-page2 {
+    width: 60%;
+    max-width: 500px;
+    filter: drop-shadow(0 0 30px rgba(180, 100, 255, 0.9));
+}
+
+.question-container h1 {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.question-text {
+    font-size: 25px;
+}
+
+.question-container h2 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 15px purple;
+}
