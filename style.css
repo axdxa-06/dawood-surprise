@@ -133,20 +133,44 @@ h1 {
 }
 .city-lights {
     position: absolute;
-    top: 10%;
+    top: 15%;
     width: 100%;
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    opacity: 0.8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.city-lights span {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
     animation: twinkle 3s infinite;
+}
+
+.city-lights span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.city-lights span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.city-lights span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.city-lights span:nth-child(5) {
+    animation-delay: 2s;
 }
 
 @keyframes twinkle {
     0%, 100% {
-        opacity: 0.5;
+        opacity: 0.3;
+        transform: scale(1);
     }
     50% {
         opacity: 1;
+        transform: scale(1.5);
     }
 }
