@@ -178,50 +178,75 @@ h1 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 180px;
+    height: 220px;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
-    gap: 10px;
-    z-index: 1;
+    justify-content: center;
+    gap: 8px;
+    opacity: 0.9;
 }
 
 .building {
-    width: 70px;
-    background: #090014;
-    box-shadow: inset 0 0 20px rgba(180,100,255,0.3);
+    background: linear-gradient(to top, #05000d, #17002d);
+    position: relative;
+    box-shadow: 0 0 30px rgba(120, 50, 200, 0.3);
+}
+
+.building::after {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.6) 2px, transparent 3px);
+    background-size: 18px 22px;
+    opacity: 0.4;
 }
 
 .b1 {
-    height: 100px;
+    width: 80px;
+    height: 130px;
 }
 
 .b2 {
-    height: 150px;
+    width: 100px;
+    height: 180px;
 }
 
 .b3 {
-    height: 80px;
+    width: 60px;
+    height: 110px;
 }
 
 .b4 {
-    height: 120px;
+    width: 90px;
+    height: 150px;
 }
+
 
 /* CN Tower */
 .cn-tower {
-    width: 20px;
-    height: 200px;
-    background: #090014;
+    width: 8px;
+    height: 210px;
+    background: linear-gradient(to top, #080014, #2b0050);
     position: relative;
 }
 
 .tower-top {
     position: absolute;
-    top: -25px;
-    left: -10px;
-    width: 40px;
-    height: 25px;
-    background: #090014;
+    top: 20px;
+    left: -18px;
+    width: 45px;
+    height: 12px;
+    background: #17002d;
     border-radius: 50%;
+}
+
+.cn-tower::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 3px;
+    width: 2px;
+    height: 40px;
+    background: white;
 }
