@@ -174,3 +174,54 @@ h1 {
         transform: scale(1.5);
     }
 }
+.skyline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 1;
+}
+
+.building {
+    width: 70px;
+    background: #090014;
+    box-shadow: inset 0 0 20px rgba(180,100,255,0.3);
+}
+
+.b1 {
+    height: 100px;
+}
+
+.b2 {
+    height: 150px;
+}
+
+.b3 {
+    height: 80px;
+}
+
+.b4 {
+    height: 120px;
+}
+
+/* CN Tower */
+.cn-tower {
+    width: 20px;
+    height: 200px;
+    background: #090014;
+    position: relative;
+}
+
+.tower-top {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 40px;
+    height: 25px;
+    background: #090014;
+    border-radius: 50%;
+}
