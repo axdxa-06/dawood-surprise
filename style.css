@@ -121,11 +121,15 @@ h1 {
 
 
 @keyframes driveIn {
-    from {
+    0% {
         transform: translateX(-120vw);
     }
 
-    to {
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
         transform: translateX(0);
     }
 }
