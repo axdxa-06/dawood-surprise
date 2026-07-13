@@ -219,3 +219,7 @@ h1 {
     margin: -10px auto 0;
     transform: perspective(200px) rotateX(60deg);
 }
+
+.question-container h1 {
+    margin-bottom: 20px;
+}
