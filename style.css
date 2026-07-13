@@ -227,7 +227,7 @@ h1 {
     position: absolute;
     width: 100px;
     height: 35px;
-    background: rgba(255, 255, 255, 0.6);
+    background: red;
     filter: blur(15px);
     z-index: 5;
 }
