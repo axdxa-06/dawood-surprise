@@ -193,3 +193,13 @@ h1 {
         transform: scale(1.5);
     }
 }
+.road-glow {
+    width: 450px;
+    height: 40px;
+    background: rgba(180, 100, 255, 0.5);
+    border-radius: 50%;
+    filter: blur(25px);
+    margin: -20px auto 0;
+    position: relative;
+    z-index: -1;
+}
