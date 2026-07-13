@@ -217,3 +217,27 @@ h1 {
     z-index: 2;
     pointer-events: none;
 }
+.car-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.headlight-left,
+.headlight-right {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.6);
+    filter: blur(15px);
+    z-index: 2;
+}
+
+.headlight-left {
+    left: 5%;
+    top: 45%;
+}
+
+.headlight-right {
+    right: 5%;
+    top: 45%;
+}
