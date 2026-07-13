@@ -115,6 +115,9 @@ h1 {
     width: 60%;
     max-width: 500px;
     filter: drop-shadow(0 0 30px rgba(180, 100, 255, 0.9));
+    position: relative;
+    z-index: 3;
+}
 }
 
 .question-container h1 {
@@ -206,12 +209,12 @@ h1 {
     position: absolute;
     width: 500px;
     height: 120px;
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.18);
     filter: blur(35px);
     border-radius: 50%;
-    transform: rotate(-5deg);
     top: 55%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    z-index: 2;
+    pointer-events: none;
 }
