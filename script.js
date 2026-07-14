@@ -3,5 +3,5 @@ const car = document.querySelector(".car-wrapper");
 
 engineButton.addEventListener("click", () => {
     engineButton.style.display = "none";
-    car.style.transform = "translateX(500px)";
+    car.classList.add("drive-away");
 });
