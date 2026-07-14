@@ -303,9 +303,11 @@ h1 {
     transform: translateY(-50%);
     display: flex;
     gap: 100px;
+    opacity: 0;
+
 }
 
 .heart-trail span {
-    font-size: 30px;
+    font-size: 28px;
     filter: drop-shadow(0 0 15px rgba(180, 100, 255, 0.9));
-}
+
