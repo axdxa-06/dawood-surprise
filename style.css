@@ -292,7 +292,7 @@ h1 {
     background: rgba(30, 15, 50, 0.9);
     border: 2px solid rgba(180, 100, 255, 0.5);
 }
-.engine-button:hover {
-    transform: scale(1.08);
+.engine-button:active {
+    transform: scale(0.95);
     box-shadow: 0 0 40px rgba(220, 150, 255, 1);
 }
