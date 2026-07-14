@@ -302,7 +302,7 @@ h1 {
     top: 38%;
     transform: translateY(-50%);
     display: flex;
-    gap: 70ppx;
+    gap: 100ppx;
 }
 
 .heart-trail span {
