@@ -299,10 +299,10 @@ h1 {
 .heart-trail {
     position: absolute;
     left: -10%;
-    top: 35%;
+    top: 38%;
     transform: translateY(-50%);
     display: flex;
-    gap: 35px;
+    gap: 55px;
 }
 
 .heart-trail span {
