@@ -8,3 +8,9 @@ engineButton.addEventListener("click", () => {
     hearts.style.opacity = "1";
     car.classList.add("drive-away");
 });
+
+const reverseButton = document.querySelector(".reverse-button");
+
+reverseButton.addEventListener("touchstart", () => {
+    reverseButton.style.transform = "translateX(120px)";
+});
