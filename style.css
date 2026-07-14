@@ -298,8 +298,8 @@ h1 {
 }
 .heart-trail {
     position: absolute;
-    left: -40%;
-    top: 40%;
+    left: -180%;
+    top: 50%;
     transform: translateY(-50%);
     display: flex;
     gap: 100px;
