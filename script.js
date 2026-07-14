@@ -12,5 +12,8 @@ engineButton.addEventListener("click", () => {
 const reverseButton = document.querySelector(".reverse-button");
 
 reverseButton.addEventListener("touchstart", () => {
-    reverseButton.style.transform = "translateX(120px)";
+    const x = Math.random() * 250 - 125;
+    const y = Math.random() * 150 - 75;
+
+    reverseButton.style.transform = `translate(${x}px, ${y}px)`;
 });
