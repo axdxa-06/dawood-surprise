@@ -296,3 +296,10 @@ h1 {
     transform: scale(0.95);
     box-shadow: 0 0 40px rgba(220, 150, 255, 1);
 }
+.heart-trail {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    font-size: 30px;
+    filter: drop-shadow(0 0 15px rgba(180, 100, 255, 0.9));
+}
