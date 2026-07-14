@@ -310,6 +310,7 @@ h1 {
 .heart-trail span {
     font-size: 28px;
     filter: drop-shadow(0 0 15px rgba(180, 100, 255, 0.9));
+}
 
 .drive-away {
     animation: driveAway 3s ease-in forwards;
