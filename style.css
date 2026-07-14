@@ -315,6 +315,3 @@ h1 {
     animation: driveAway 3s ease-in forwards;
 }
 
-.drive-away {
-    transform: translateX(500px);
-}
