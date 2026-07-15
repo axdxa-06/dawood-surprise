@@ -6,6 +6,8 @@ engineButton.addEventListener("click", () => {
     engineButton.style.display = "none";
 
     hearts.style.opacity = "1";
+    hearts.classList.add("heart-fade");
+
     car.classList.add("drive-away");
 });
 
