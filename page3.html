@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Last Envelope...</title>
-    <!-- Importing Baloo 2 and Caveat from Google Fonts -->
+    
+    <!-- We are importing Baloo 2 for the main text, and Caveat for the handwriting style -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
@@ -28,7 +29,7 @@
                 radial-gradient(circle at 20% 30%, rgba(80, 20, 120, 0.4) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, rgba(120, 20, 80, 0.3) 0%, transparent 50%);
             color: #ffffff;
-            font-family: 'Baloo 2', sans-serif; /* Applied Baloo 2 here */
+            font-family: 'Baloo 2', sans-serif;
             font-size: 1.1rem;
             min-height: 100vh;
             overflow-x: hidden;
@@ -56,7 +57,7 @@
             z-index: 0;
         }
 
-        /* Ambient Spiderwebs */
+        /* Ambient Spiderwebs from your design */
         .spiderweb {
             position: absolute;
             width: 250px;
@@ -222,7 +223,7 @@
             filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
         }
 
-        /* REVEALED CONTENT SCREEN */
+        /* REVEALED CONTENT SCREEN (Hidden initially) */
         .reveal-container {
             display: none;
             width: 90%;
@@ -385,7 +386,7 @@
         }
 
         .progress-fill {
-            width: 35%; /* Mock progress */
+            width: 35%; /* Shows 1:15 progress on a 3:01 song */
             height: 100%;
             background: var(--primary-pink);
             border-radius: 2px;
@@ -499,7 +500,7 @@
     <div class="spiderweb web-top-left"></div>
     <div class="spiderweb web-top-right"></div>
 
-    <!-- Background Porsche Car -->
+    <!-- Background Porsche Car (Matches your Step 1 landing page) -->
     <img class="porsche-bg" id="porscheBgCar" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=600" alt="Porsche GT3">
 
     <!-- HEADER BLOCK -->
@@ -523,7 +524,7 @@
     <!-- REVEALED CARD CONTENT -->
     <div class="reveal-container" id="revealContainer">
         
-        <!-- LEFT: Letter Card -->
+        <!-- LEFT: Letter Card (With your exact message) -->
         <div class="letter-card">
             <h2 class="letter-title">To my favorite person, ♡</h2>
             <p class="letter-text">
@@ -538,6 +539,7 @@
         <div class="right-column">
             <!-- Polaroid Frame -->
             <div class="polaroid-frame">
+                <!-- Replace this link with a photo of you two later! -->
                 <img class="polaroid-photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=400" alt="Our Photo">
             </div>
 
@@ -593,13 +595,18 @@
         let isPlaying = false;
 
         function openEnvelope(event) {
+            // Animates the wax seal cracking and top flap lifting
             waxSeal.style.transform = 'translate(-50%, -30%) scale(0)';
             waxSeal.style.opacity = '0';
             topFlap.style.transform = 'rotateX(180deg)';
             
+            // Starts playing the song
             playSong();
+
+            // Launches the pink heart explosion on click
             createHeartBurst(event.clientX, event.clientY);
 
+            // Switches display to revealed cards
             setTimeout(() => {
                 envelopeWrapper.style.display = 'none';
                 mainHeader.style.display = 'none';
@@ -632,6 +639,7 @@
             }, 500);
         }
 
+        // Creates beautiful floating neon heart particles
         function createHeartBurst(x, y) {
             const container = document.body;
             for (let i = 0; i < 15; i++) {
@@ -650,7 +658,7 @@
 
         function playSong() {
             bgSong.play().catch(error => {
-                console.log("Autoplay blocked, waiting for click.");
+                console.log("Autoplay blocked. Playing after interaction.");
             });
             document.querySelector('.play-pause-btn').innerHTML = '❚❚';
             isPlaying = true;
