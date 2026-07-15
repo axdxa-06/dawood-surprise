@@ -357,3 +357,18 @@ h1 {
         transform: translateY(-30px);
     }
 }
+.gif-one {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    z-index: 100;
+}
+
+.gif-two {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    z-index: 100;
+}
