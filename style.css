@@ -384,3 +384,32 @@ h1 {
     background-image: none;
     background: #05010a;
 }
+.page-three .page3-header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: left;
+}
+
+
+.page-three .page3-header h1 {
+    color: white;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 55px;
+    margin: 0;
+
+    text-shadow:
+    0 0 10px #ff2a85,
+    0 0 25px #ff2a85;
+}
+
+
+.page-three .page3-header p {
+    color: #e8c7ff;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+
+    text-shadow:
+    0 0 10px #b46cff;
+}
