@@ -415,3 +415,25 @@ h1 {
      0 0 8px #c77dff,
     0 0 20px #9d4edd;
 }
+.page-three .page3-porsche {
+
+    position: absolute;
+
+    left: 50px;
+
+    top: 55%;
+
+    width: 220px;
+
+}
+
+
+.page-three .page3-porsche img {
+
+    width: 100%;
+
+    filter:
+    drop-shadow(0 0 15px #9d4edd)
+    drop-shadow(0 0 30px #7b2cbf);
+
+}
