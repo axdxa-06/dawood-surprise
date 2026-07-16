@@ -480,4 +480,74 @@ body {
     z-index: 2;
     pointer-events: none;
 }
+.page3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background:
+    radial-gradient(circle at center, #35115c, #05010a 70%);
+    font-family: "Baloo 2", sans-serif;
+}
+
+
+.page3-intro {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+}
+
+
+.page3-intro h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow:
+    0 0 10px #ff2a85,
+    0 0 30px #ff2a85;
+}
+
+
+.page3-intro p {
+    color: #e8c7ff;
+    font-size: 1.4rem;
+}
+
+
+.page3-porsche {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+    width: 250px;
+    height: 120px;
+}
+
+
+.page3-envelopes {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 40px;
+}
+
+
+.envelope {
+    height: 180px;
+    background: #230c3a;
+    border: 1px solid #ff2a85;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+    0 0 25px rgba(255, 42, 133, 0.4);
+}
+.page3-porsche img {
+    width: 100%;
+    filter: drop-shadow(0 0 15px #ff2a85);
+}
 
