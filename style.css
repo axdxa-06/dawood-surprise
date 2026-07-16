@@ -380,3 +380,7 @@ h1 {
     height: 80px;
     z-index: 200;
 }
+.page-three {
+    background-image: none;
+    background: #05010a;
+}
