@@ -380,3 +380,173 @@ h1 {
     height: 80px;
     z-index: 200;
 }
+/* PAGE 3 */
+
+.page3 {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background:
+    radial-gradient(circle at center, #35115c, #05010a 75%);
+    font-family: "Baloo 2", sans-serif;
+}
+
+
+
+/* BACKGROUND */
+
+.page3-stars {
+    position: absolute;
+    inset: 0;
+    background-image:
+    radial-gradient(circle, white 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: .25;
+}
+
+
+
+.page3-web {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px dashed #ff2a85;
+    opacity: .5;
+    box-shadow: 0 0 20px #ff2a85;
+}
+
+
+.page3-web-left {
+    top: -120px;
+    left: -120px;
+    border-radius: 50%;
+}
+
+
+.page3-web-right {
+    top: -120px;
+    right: -120px;
+    border-radius: 50%;
+}
+
+
+
+/* TITLE */
+
+.page3-intro {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+    z-index: 5;
+}
+
+
+.page3-intro h1 {
+    margin: 0;
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow:
+    0 0 10px #ff2a85,
+    0 0 30px #ff2a85;
+}
+
+
+.page3-intro p {
+    color: #e8c7ff;
+    font-size: 1.4rem;
+}
+
+
+
+/* PORSCHE */
+
+.page3-porsche {
+    position: absolute;
+    left: 5%;
+    top: 55%;
+    width: 300px;
+    z-index: 3;
+}
+
+
+.page3-porsche img {
+    width: 100%;
+    filter:
+    drop-shadow(0 0 20px #ff2a85);
+}
+
+
+
+/* ENVELOPES */
+
+.page3-envelope-area {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 50px;
+
+    z-index: 4;
+}
+
+
+
+.page3-envelope {
+    width: 300px;
+    height: 200px;
+    background: #230c3a;
+
+    border-radius: 15px;
+
+    border: 2px solid #ff2a85;
+
+    box-shadow:
+    0 0 30px rgba(255,42,133,.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.envelope-front {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.wax-seal {
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    background:
+    radial-gradient(circle,#d11545,#6b031b);
+
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#ffb3c7;
+
+    font-size:30px;
+
+    box-shadow:
+    0 0 15px rgba(255,42,133,.7);
+}
