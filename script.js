@@ -19,3 +19,16 @@ reverseButton.addEventListener("touchstart", () => {
 
     reverseButton.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+const envelopes = document.querySelectorAll(".envelope");
+
+
+envelopes.forEach((envelope) => {
+
+    envelope.addEventListener("click", () => {
+
+        envelope.classList.add("open");
+
+    });
+
+});
