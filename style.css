@@ -665,3 +665,33 @@ h1 {
     0 5px 15px rgba(0,0,0,0.5);
 
 }
+.page-three .envelope {
+    perspective: 800px;
+}
+
+
+.page-three .envelope-flap {
+
+    transform-origin: top center;
+
+    transition: transform 1s ease;
+
+}
+
+
+.page-three .envelope.open .envelope-flap {
+
+    transform: rotateX(180deg);
+
+}
+
+
+.page-three .envelope.open .wax-seal {
+
+    transform: translateX(-50%) scale(0);
+
+    opacity: 0;
+
+    transition: 0.5s ease;
+
+}
