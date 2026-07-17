@@ -505,12 +505,17 @@ h1 {
     position: absolute;
 
     top: 55%;
-    right: 15%;
+    right: 8%;
 
     transform: translateY(-50%);
 
-}
+    display: grid;
 
+    grid-template-columns: repeat(2, 300px);
+
+    gap: 45px;
+
+}
 
 
 .page-three .envelope {
