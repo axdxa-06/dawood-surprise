@@ -467,3 +467,57 @@ h1 {
 .page-three .page3-porsche {
     z-index: 2;
 }
+.page-three .page3-web {
+
+    position: absolute;
+
+    width: 230px;
+
+    height: 230px;
+
+    opacity: 0.35;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+}
+
+
+.page-three .web-left {
+
+    top: -80px;
+
+    left: -80px;
+
+    border-right: 2px solid #c77dff;
+
+    border-bottom: 2px solid #c77dff;
+
+    border-radius: 0 0 100% 0;
+
+    box-shadow:
+    0 0 15px #9d4edd,
+    0 0 30px #7b2cbf;
+
+}
+
+
+
+.page-three .web-right {
+
+    top: -80px;
+
+    right: -80px;
+
+    border-left: 2px solid #c77dff;
+
+    border-bottom: 2px solid #c77dff;
+
+    border-radius: 0 0 0 100%;
+
+    box-shadow:
+    0 0 15px #9d4edd,
+    0 0 30px #7b2cbf;
+
+}
