@@ -490,7 +490,6 @@ h1 {
     top: 0;
 
     left: 0;
-
 }
 
 
@@ -500,5 +499,109 @@ h1 {
     top: 0;
 
     right: 0;
+}
+.page-three .envelope-container {
 
+    position: absolute;
+
+    top: 55%;
+    right: 15%;
+
+    transform: translateY(-50%);
+
+}
+
+
+.page-three .envelope {
+
+    position: relative;
+
+    width: 300px;
+    height: 200px;
+
+    background: #230c3a;
+
+    border-radius: 12px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.5),
+    0 0 25px rgba(157,78,221,0.5);
+
+    overflow: hidden;
+
+}
+
+
+.page-three .envelope-flap {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 100px solid #3b1466;
+
+    transform-origin: top;
+
+    transition: transform 1s ease;
+
+}
+
+
+.page-three .wax-seal {
+
+    position: absolute;
+
+    top: 75px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #d11545,
+        #6b031b
+    );
+
+    color: #4b0015;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    z-index: 5;
+
+}
+
+
+.page-three .letter {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 25px;
+
+    width: 250px;
+    height: 150px;
+
+    background: #fff1d6;
+
+    border-radius: 8px;
+
+    transform: translateY(120px);
+
+    transition: transform 1s ease;
 }
