@@ -515,7 +515,7 @@ h1 {
 .page-three .envelope {
 
     position: relative;
-
+    overflow: hidden;
     width: 300px;
     height: 200px;
 
@@ -549,7 +549,7 @@ h1 {
     transform-origin: top;
 
     transition: transform 1s ease;
-
+    z-index: 3;
 }
 
 
@@ -581,18 +581,16 @@ h1 {
 
     font-size: 28px;
 
-    z-index: 5;
+    z-index: 4;
 
 }
-
 
 .page-three .letter {
 
     position: absolute;
 
-    bottom: 0;
-
     left: 25px;
+    bottom: 0;
 
     width: 250px;
     height: 150px;
@@ -601,7 +599,9 @@ h1 {
 
     border-radius: 8px;
 
-    transform: translateY(120px);
+    transform: translateY(140px);
+
+    z-index: 1;
 
     transition: transform 1s ease;
 }
