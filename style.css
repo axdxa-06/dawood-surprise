@@ -437,3 +437,33 @@ h1 {
     drop-shadow(0 0 30px #7b2cbf);
 
 }
+
+.page-three {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background:
+    radial-gradient(circle at 50% 35%, #35115c 0%, transparent 45%),
+    radial-gradient(circle at 20% 80%, #1a0933 0%, transparent 40%),
+    linear-gradient(#05010a, #090016);
+}
+
+
+.page-three .page3-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background:
+    radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 2px),
+    radial-gradient(circle, rgba(199,125,255,0.8) 1px, transparent 2px);
+
+    background-size: 120px 120px, 200px 200px;
+
+    opacity: 0.35;
+}
+.page-three .page3-header,
+.page-three .page3-porsche {
+    z-index: 2;
+}
