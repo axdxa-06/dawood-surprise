@@ -9,7 +9,14 @@ engineButton.addEventListener("click", () => {
     hearts.classList.add("heart-fade");
 
     car.classList.add("drive-away");
+
+
+    setTimeout(() => {
+        window.location.href = "page3.html";
+    }, 2500);
+
 });
+
 
 const reverseButton = document.querySelector(".reverse-button");
 
@@ -19,4 +26,3 @@ reverseButton.addEventListener("touchstart", () => {
 
     reverseButton.style.transform = `translate(${x}px, ${y}px)`;
 });
-
