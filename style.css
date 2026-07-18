@@ -1094,3 +1094,73 @@ h1 {
     opacity: 1;
 
 }
+/* =========================
+   POLAROID PHOTO STYLE
+========================= */
+
+
+.page-three .memory-photo {
+
+    width: 260px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+
+    background: white;
+
+    padding: 12px;
+
+    padding-bottom: 35px;
+
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35);
+
+
+    transform: rotate(-4deg);
+
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+
+/* Slight movement when memory opens */
+
+.page-three .memory-screen.show .memory-photo {
+
+    animation: photoReveal 1s ease forwards;
+
+}
+
+
+
+@keyframes photoReveal {
+
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+        rotate(-10deg)
+        translateY(40px);
+
+    }
+
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+        rotate(-4deg)
+        translateY(0);
+
+    }
+
+}
