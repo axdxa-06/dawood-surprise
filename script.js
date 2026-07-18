@@ -1,4 +1,3 @@
-console.log("Page 3 JS loaded");
 const engineButton = document.querySelector(".engine-button");
 const car = document.querySelector(".car-wrapper");
 const hearts = document.querySelector(".heart-trail");
@@ -21,31 +20,20 @@ reverseButton.addEventListener("touchstart", () => {
     reverseButton.style.transform = `translate(${x}px, ${y}px)`;
 });
 
+console.log("Page 3 JS loaded");
+
 const envelopes = document.querySelectorAll(".envelope");
+
+console.log("Envelopes found:", envelopes.length);
 
 
 envelopes.forEach((envelope) => {
 
     envelope.addEventListener("click", () => {
 
-        // Stop if already open
-        if (envelope.classList.contains("open")) {
-            return;
-        }
+        console.log("Envelope clicked");
 
-
-        // Open clicked envelope
         envelope.classList.add("open");
-
-
-    });
-
-});
-
-
-        // Future effects:
-        // createSparkles(envelope);
-        // startTyping(envelope);
 
     });
 
