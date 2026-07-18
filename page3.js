@@ -1,17 +1,33 @@
-console.log("Page 3 JS loaded");
-
 const envelopes = document.querySelectorAll(".envelope");
-
-console.log("Envelopes found:", envelopes.length);
 
 
 envelopes.forEach((envelope) => {
 
     envelope.addEventListener("click", () => {
 
-        console.log("Envelope clicked");
+        const memoryNumber = envelope.dataset.memory;
 
-        envelope.classList.add("open");
+        const memoryScreen = document.getElementById(
+            "memory" + memoryNumber
+        );
+
+
+        memoryScreen.classList.add("show");
+
+    });
+
+});
+
+
+
+const closeButtons = document.querySelectorAll(".close-memory");
+
+
+closeButtons.forEach((button)=>{
+
+    button.addEventListener("click",()=>{
+
+        button.parentElement.classList.remove("show");
 
     });
 
