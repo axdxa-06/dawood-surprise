@@ -903,3 +903,149 @@ h1 {
     cursor: pointer;
 
 }
+/* Sparkles around envelopes */
+
+.page-three .sparkles {
+
+    position: absolute;
+
+    inset: -20px;
+
+    pointer-events: none;
+
+}
+
+
+.page-three .sparkles::before,
+.page-three .sparkles::after {
+
+    content: "✦ ✧ ✦";
+
+    position: absolute;
+
+    color: #e8c7ff;
+
+    font-size: 20px;
+
+    animation: sparkleFloat 3s infinite ease-in-out;
+
+}
+
+
+
+.page-three .sparkles::before {
+
+    top: 10px;
+
+    left: 20px;
+
+}
+
+
+
+.page-three .sparkles::after {
+
+    bottom: 20px;
+
+    right: 20px;
+
+}
+
+
+
+@keyframes sparkleFloat {
+
+    0%,100% {
+
+        opacity: .5;
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        opacity: 1;
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+
+
+/* Hearts when opened */
+
+.page-three .heart-particles {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+}
+
+
+
+.page-three .heart-particles::before {
+
+    content: "💜 💕 ✨ 💜";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+
+    opacity: 0;
+
+}
+
+
+
+.page-three .envelope.open .heart-particles::before {
+
+    animation: heartsRise 1.5s ease forwards;
+
+}
+
+
+
+@keyframes heartsRise {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+        translate(-50%, 0)
+        scale(.5);
+
+    }
+
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+        translate(-50%, -120px)
+        scale(1.2);
+
+    }
+
+}
