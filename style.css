@@ -1181,3 +1181,26 @@ h1 {
     text-align: center;
 
 }
+/* =========================
+   MEMORY SONG PLAYER
+========================= */
+
+.page-three .memory-song {
+
+    width: 100%;
+
+    height: 120px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.25),
+        0 0 20px rgba(157,78,221,0.35);
+
+}
