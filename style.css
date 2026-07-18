@@ -1049,3 +1049,48 @@ h1 {
     }
 
 }
+/* =========================
+   MEMORY PAPER ANIMATION
+========================= */
+
+
+.page-three .memory-paper {
+
+    width: 500px;
+
+    min-height: 600px;
+
+    background: #fff1d6;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.6),
+        0 0 40px rgba(157,78,221,0.5);
+
+
+    transform: scale(0.5) translateY(80px);
+
+    opacity: 0;
+
+    transition:
+        transform 1s ease,
+        opacity 0.8s ease;
+
+}
+
+
+
+/* When memory opens */
+
+.page-three .memory-screen.show .memory-paper {
+
+    transform:
+        scale(1)
+        translateY(0);
+
+    opacity: 1;
+
+}
