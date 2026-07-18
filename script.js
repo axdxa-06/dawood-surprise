@@ -1,3 +1,4 @@
+console.log("Page 3 JS loaded");
 const engineButton = document.querySelector(".engine-button");
 const car = document.querySelector(".car-wrapper");
 const hearts = document.querySelector(".heart-trail");
