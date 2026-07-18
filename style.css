@@ -721,3 +721,21 @@ h1 {
 
     opacity: 0;
 }
+.page-three .hello-bow {
+
+    position: absolute;
+
+    width: 55px;
+
+    top: -18px;
+
+    right: -15px;
+
+    z-index: 6;
+
+    transform: rotate(15deg);
+
+    filter:
+    drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+
+}
