@@ -810,3 +810,96 @@ h1 {
     opacity: 0;
 
 }
+/* Memory Reveal Screen */
+
+.page-three .memory-screen {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(157,78,221,0.4),
+        #12051f
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.8s ease;
+
+    z-index: 20;
+
+}
+
+
+
+.page-three .memory-screen.show {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}
+
+
+
+.memory-paper {
+
+    width: 500px;
+
+    min-height: 600px;
+
+    background: #fff1d6;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,0.6);
+
+    transform: scale(0.7);
+
+    transition: 0.8s ease;
+
+}
+
+
+
+.memory-screen.show .memory-paper {
+
+    transform: scale(1);
+
+}
+
+
+
+.close-memory {
+
+    position: absolute;
+
+    top: 30px;
+
+    right: 40px;
+
+    font-size: 40px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+}
