@@ -28,15 +28,19 @@ envelopes.forEach((envelope) => {
 
     envelope.addEventListener("click", () => {
 
-
-        // Stop if this envelope is already open
+        // Stop if already open
         if (envelope.classList.contains("open")) {
             return;
         }
 
 
-        // Open only the clicked envelope
+        // Open clicked envelope
         envelope.classList.add("open");
+
+
+    });
+
+});
 
 
         // Future effects:
