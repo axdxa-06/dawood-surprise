@@ -1164,3 +1164,20 @@ h1 {
     }
 
 }
+/* =========================
+   MEMORY TEXT
+========================= */
+
+.page-three .memory-text {
+
+    font-family: "Short Stack", cursive;
+
+    font-size: 24px;
+
+    color: #4a235a;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+}
