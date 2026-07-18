@@ -1204,3 +1204,6 @@ h1 {
         0 0 20px rgba(157,78,221,0.35);
 
 }
+.page-three .memory2-photo {
+    object-position: 50% 20%;
+}
