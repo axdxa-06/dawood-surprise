@@ -521,7 +521,9 @@ h1 {
 
 
 
-/* Envelope Body */
+/* =========================
+   ENVELOPE BODY
+========================= */
 
 .page-three .envelope {
 
@@ -543,8 +545,8 @@ h1 {
     perspective: 900px;
 
     box-shadow:
-    0 20px 40px rgba(0,0,0,0.6),
-    0 0 30px rgba(157,78,221,0.6);
+        0 20px 40px rgba(0,0,0,0.6),
+        0 0 30px rgba(157,78,221,0.6);
 
     cursor: pointer;
 
@@ -552,16 +554,20 @@ h1 {
 
 
 
-/* Letter */
+/* =========================
+   LETTER
+========================= */
 
 .page-three .letter {
 
     position: absolute;
 
     top: 15px;
+
     left: 25px;
 
     width: 250px;
+
     height: 160px;
 
     background: #fff1d6;
@@ -575,29 +581,33 @@ h1 {
     z-index: 1;
 
     transition:
-    transform 1.2s ease,
-    opacity 0.6s ease;
+        transform 1.2s ease,
+        opacity 0.6s ease;
 
     box-shadow:
-    0 10px 25px rgba(0,0,0,0.3);
+        0 10px 25px rgba(0,0,0,0.3);
 
 }
 
 
 
-/* Letter comes out */
+/* Letter rises above envelope */
 
 .page-three .envelope.open .letter {
 
-    transform: translateY(-100px);
+    transform: translateY(-110px);
 
     opacity: 1;
+
+    z-index: 5;
 
 }
 
 
 
-/* Envelope front pocket */
+/* =========================
+   FRONT POCKET
+========================= */
 
 .page-three .envelope-front {
 
@@ -611,11 +621,13 @@ h1 {
 
     height: 75%;
 
+
     background: linear-gradient(
         145deg,
         #230c3a,
         #32104f
     );
+
 
     clip-path: polygon(
         0 20%,
@@ -625,13 +637,16 @@ h1 {
         0 100%
     );
 
-    z-index: 2;
+
+    z-index: 3;
 
 }
 
 
 
-/* Flap */
+/* =========================
+   TOP FLAP
+========================= */
 
 .page-three .envelope-flap {
 
@@ -645,30 +660,33 @@ h1 {
 
     height: 0;
 
+
     border-left: 150px solid transparent;
 
     border-right: 150px solid transparent;
 
     border-top: 105px solid #4b177a;
 
+
     transform-origin: top center;
 
-    transition: transform 1s ease;
+    transition:
+        transform 1s ease;
 
-    z-index: 3;
+
+    z-index: 4;
 
 }
 
 
 
-/* Open flap */
+/* Flap opens */
 
 .page-three .envelope.open .envelope-flap {
 
     transform: rotateX(180deg);
 
 }
-
 /* =========================
    WAX SEAL (CENTER)
 ========================= */
